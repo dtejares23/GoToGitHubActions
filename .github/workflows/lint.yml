@@ -16,8 +16,8 @@ jobs:
         go-version: '1.14.1'
 
       name: lint
-      run: |
-        curl -sSfL https://raw.githubusercontent.com/golangci/golangco-lint/master/install.
-        sh | sh -s -- -b $(go enc GOPATH)/bin v1.26.0
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/golangci/golangco-lint/master/install.
+          sh | sh -s -- -b $(go env GOPATH)/bin v1.26.0
 
-        golangci-list run
+          golangci-list

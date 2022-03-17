@@ -20,4 +20,4 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/golangci/golangco-lint/master/install.
           sh | sh -s -- -b $(go env GOPATH)/bin v1.26.0
 
-          golangci-lint- run
+          golangci-lint run
